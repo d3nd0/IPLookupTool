@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <title>Get Your IP</title>
+    <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="A simple to use HTML IP Retrieval Utility." />
+    <meta name="keywords" content="ipv4,location,network,info,public,wan,ipv6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" type="image/png" href="https://www.favicon.cc/favicon/577/730/favicon.png" />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Custom Styles -->
+    <link type="text/css" rel="stylesheet" href="style.css" media="all" />
+</head>
+
+<body>
+    <div id="column">
+
+        <!-- HEADER -->
+        <header>
+            <img src="placeholder-logo.png" loading="lazy" alt="Site Logo" />
+        </header>
+
+        <!-- APP -->
+        <div id="wrapper">
+            <!-- Loading / Results Section -->
+            <div class="tab">
+                <div id="loading-message" class="iptextbold">Loading IP Information...</div>
+
+                <div id="results-container" class="hide">
+                    <div class="row">
+                        <div class="text-muted">IP Address:</div>
+                        <div id="ip-address" class="text-selectable iptextbold"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-muted">ISP/ASN:</div>
+                        <div id="isp-info" class="text-selectable"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-muted">Location:</div>
+                        <div id="location-info" class="text-selectable"></div>
+                    </div>
+                    <div class="row" id="geo-row">
+                        <div class="text-muted">Exact Address:</div>
+                        <div id="exact-address" class="text-selectable">Not available</div>
+                    </div>
+                    <div class="row" id="coords-row">
+                        <div class="text-muted">Coordinates:</div>
+                        <div id="coordinates" class="text-selectable">Not available</div>
+                    </div>
+
+                    <!-- Interactive Map -->
+                    <div id="map"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div id="footer-text" class="text-center">
+                <!-- Javascript will populate this -->
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

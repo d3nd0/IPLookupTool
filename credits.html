@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <title>Credits - IP Lookup</title>
+    <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" type="image/png" href="https://www.favicon.cc/favicon/577/730/favicon.png" />
+
+    <!-- Custom Styles -->
+    <link type="text/css" rel="stylesheet" href="style.css" media="all" />
+</head>
+
+<body>
+    <div id="column">
+
+        <!-- HEADER -->
+        <header>
+            <img src="placeholder-logo.png" loading="lazy" alt="Site Logo" />
+            <h1>Credits</h1>
+        </header>
+
+        <!-- CREDITS CONTENT -->
+        <div id="wrapper">
+            <div class="tab">
+                <div class="credits-title">Powered By</div>
+                <p class="iplink"><a href="https://get.geojs.io/" target="_blank">GeoJS IP Geolocation API</a></p>
+                <p class="iplink"><a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a></p>
+                <p class="iplink"><a href="https://leafletjs.com/" target="_blank">Leaflet.js</a></p>
+                <p class="iplink"><a href="https://nominatim.openstreetmap.org/" target="_blank">Nominatim Geocoding</a>
+                </p>
+            </div>
+
+            <div class="tab text-center" style="margin-top: 1.5rem;">
+                <a href="index.html" class="btn primary">← Back to IP Lookup</a>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="text-center">
+                <p>&copy; <span id="year"></span> IP Lookup Tool</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
